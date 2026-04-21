@@ -1,0 +1,83 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap');
+  .al-root { font-family: 'DM Sans', sans-serif; font-weight: 300; color: var(--color-text-primary); padding: 3rem 0 2rem; }
+  .al-eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 0.5rem; }
+  .al-name { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 300; line-height: 1.1; margin: 0 0 0.25rem; }
+  .al-tagline { font-size: 13px; color: var(--color-text-secondary); margin: 0 0 3rem; letter-spacing: 0.04em; }
+  .al-divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 0 0 2.5rem; }
+  .al-section-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 1.5rem; }
+  .al-formats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin-bottom: 2.5rem; }
+  .al-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; transition: border-color 0.2s; cursor: default; }
+  .al-card:hover { border-color: var(--color-border-secondary); }
+  .al-card-num { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--color-text-tertiary); line-height: 1; margin-bottom: 0.75rem; }
+  .al-card-title { font-size: 14px; font-weight: 400; margin: 0 0 0.5rem; }
+  .al-card-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.6; margin: 0; }
+  .al-topics { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin-bottom: 2.5rem; }
+  .al-topic-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1.25rem; }
+  .al-topic-badge { display: inline-block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); border-radius: 20px; padding: 3px 10px; margin-bottom: 0.75rem; }
+  .al-topic-title { font-size: 13px; font-weight: 400; margin: 0 0 0.75rem; color: var(--color-text-primary); }
+  .al-topic-list { list-style: none; padding: 0; margin: 0; }
+  .al-topic-list li { font-size: 12px; color: var(--color-text-secondary); padding: 4px 0; border-bottom: 0.5px solid var(--color-border-tertiary); line-height: 1.5; }
+  .al-topic-list li:last-child { border-bottom: none; }
+  .al-topic-list li::before { content: '→ '; color: var(--color-text-tertiary); font-size: 11px; }
+  .al-cta { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 1.5rem; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-lg); }
+  .al-cta-text { font-size: 13px; color: var(--color-text-secondary); }
+  .al-cta-text strong { color: var(--color-text-primary); font-weight: 400; }
+  .al-cta-btn { font-size: 12px; letter-spacing: 0.06em; padding: 8px 20px; border: 0.5px solid var(--color-border-secondary); border-radius: 20px; background: transparent; color: var(--color-text-primary); cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.15s; white-space: nowrap; }
+  .al-cta-btn:hover { background: var(--color-background-secondary); }
+</style>
+<div class="al-root">
+  <p class="al-eyebrow">Формати співпраці</p>
+  <h1 class="al-name">Andrii Lisovyi</h1>
+  <p class="al-tagline">Контент · Ком'юніті · Стратегія · Особистий бренд</p>
+  <hr class="al-divider">
+
+  <p class="al-section-label">Як ми можемо працювати</p>
+  <div class="al-formats">
+    <div class="al-card">
+      <div class="al-card-num">01</div>
+      <p class="al-card-title">Консалтинг</p>
+      <p class="al-card-desc">Точкова робота над вашим запитом — стратегія, аудит, рекомендації. Формат: разові сесії або пакет зустрічей.</p>
+    </div>
+    <div class="al-card">
+      <div class="al-card-num">02</div>
+      <p class="al-card-title">Менторство</p>
+      <p class="al-card-desc">Регулярна підтримка в розвитку — кар'єра, особистий бренд, контент. Від запиту до результату разом.</p>
+    </div>
+    <div class="al-card">
+      <div class="al-card-num">03</div>
+      <p class="al-card-title">Воркшопи та лекції</p>
+      <p class="al-card-desc">Групові формати для команд і спільнот. Практично, по суті, без зайвої теорії.</p>
+    </div>
+  </div>
+
+  <p class="al-section-label">Теми, з якими я працюю</p>
+  <div class="al-topics">
+    <div class="al-topic-card">
+      <span class="al-topic-badge">Для бізнесу</span>
+      <p class="al-topic-title">Маркетинг та стратегія</p>
+      <ul class="al-topic-list">
+        <li>Контент-стратегія</li>
+        <li>Community-centred marketing</li>
+        <li>Стратегія присутності</li>
+        <li>Аудит комунікацій</li>
+      </ul>
+    </div>
+    <div class="al-topic-card">
+      <span class="al-topic-badge">Для особистостей</span>
+      <p class="al-topic-title">Особистий бренд та кар'єра</p>
+      <ul class="al-topic-list">
+        <li>Розвиток особистого бренду</li>
+        <li>Позиціонування в ніші</li>
+        <li>Кар'єрний розвиток</li>
+        <li>Контент від першої особи</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="al-cta">
+    <p class="al-cta-text"><strong>Готові розпочати?</strong> Напишіть — обговоримо ваш запит.</p>
+    <button class="al-cta-btn" onclick="sendPrompt('Хочу дізнатися більше про формати роботи з Andrii Lisovyi')">Зв'язатися ↗</button>
+  </div>
+</div>
