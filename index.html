@@ -1,6 +1,22 @@
-
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrii Lisovyi</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400&display=swap');
+  :root {
+    --color-text-primary: #111;
+    --color-text-secondary: #555;
+    --color-text-tertiary: #888;
+    --color-background-primary: #fff;
+    --color-border-tertiary: #e5e5e5;
+    --color-border-secondary: #ccc;
+    --border-radius-lg: 8px;
+  }
+  body { margin: 0; padding: 2rem; background: #fafafa; }
+  .al-root { max-width: 1200px; margin: 0 auto; }
   .al-root { font-family: 'DM Sans', sans-serif; font-weight: 300; color: var(--color-text-primary); padding: 3rem 0 2rem; }
   .al-eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 0.5rem; }
   .al-name { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 300; line-height: 1.1; margin: 0 0 0.25rem; }
@@ -27,6 +43,8 @@
   .al-cta-btn { font-size: 12px; letter-spacing: 0.06em; padding: 8px 20px; border: 0.5px solid var(--color-border-secondary); border-radius: 20px; background: transparent; color: var(--color-text-primary); cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.15s; white-space: nowrap; }
   .al-cta-btn:hover { background: var(--color-background-secondary); }
 </style>
+</head>
+<body>
 <div class="al-root">
   <p class="al-eyebrow">Формати співпраці</p>
   <h1 class="al-name">Andrii Lisovyi</h1>
@@ -81,3 +99,5 @@
     <button class="al-cta-btn" onclick="sendPrompt('Хочу дізнатися більше про формати роботи з Andrii Lisovyi')">Зв'язатися ↗</button>
   </div>
 </div>
+</body>
+</html>
